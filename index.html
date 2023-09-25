@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            background-color: rgb(2, 0, 116);
+            color: white;
+        }
+        td{
+            background-color: rgba(0, 187, 255, 0.345);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Elementos 
+        </h1>
+    </header>
+    <main>
+        <ul>
+            <li><a href="#HTML">HTML</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#JavaScript">JavaScript</a></li>
+        </ul>
+        <h2 id="HTML">HTML</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Elemento</th>
+                    <th>Descripcion</th>
+                    <th>Ejemplo</th>
+                    <th>Informacion<wbr>adicional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</td>
+                    <td>&lt;a href="https://www.mozilla.com/"&gt;Enlace externo&lt;/a&gt;</td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>Representa una abreviación o acrónimo; el atributo opcional title puede ampliar o describir la abreviatura. Si está presente, el atributo title debe contener la descripción completa y nada más.</td>
+                    <td>
+                        &lt;p&gt;I do &lt;abbr title="Hypertext Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;abbr&gt;</td>
+                    <td>aporta información de contacto para su &lt;article&gt; más cercano o ancestro &lt;body&gt;; en el último caso lo aplica a todo el documento.</td>
+                    <td>
+                        &lt;address&gt;<br />
+                            You can contact author at<br />
+                            &lt;a href="http://www.somedomain.com/contact"&gt;www.somedomain.com&lt;/a&gt;.&lt;br /&gt;<br />
+                            If you see any bugs, please<br />
+                            &lt;a href="mailto:webmaster@somedomain.com"&gt;contact webmaster&lt;/a&gt;.&lt;br /&gt;<br />
+                            You may also want to visit us:&lt;br /&gt;<br />
+                            Mozilla Foundation&lt;br /&gt;<br />
+                            1981 Landings Drive&lt;br /&gt;<br />
+                            Building K&lt;br /&gt;<br />
+                            Mountain View, CA 94043-0801&lt;br /&gt;<br />
+                            USA<br />
+                            &lt;/address&gt;<br />
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Define un área dentro de un mapa de imagen que tiene áreas predefinidas en las que se puede hacer clic. Un mapa de imagen permite asociar áreas geométricas de una imagen con enlaces de hipertexto.
+
+                        Este elemento se utiliza sólo dentro de un elemento &lt;map&gt;.</td>
+                    <td>
+                        &lt;map name="primary"&gt;<br />
+                        &lt;area shape="circle" coords="75,75,75" href="left.html" alt="Click to go Left" /&gt;<br />
+                              &lt;area shape="circle" coords="275,75,75" href="right.html" alt="Click to go Right" /&gt;<br />
+                              &lt;/map&gt;<br />
+                              &lt;img usemap="#primary" src="https://via.placeholder.com/350x150" alt="350 x 150 pic" /&gt;<br />
+                    </td>
+                    <td><a href="">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Representa una composición autónoma en un documento, página, aplicación o sitio, que está destinada a ser distribuible o reutilizable de forma independiente</td>
+                    <td>
+                        &lt;article class="user_review"&gt;<br />
+                        &lt;h4&gt;Love the dinos!&lt;/h4&gt;<br />
+                        &lt;p&gt;I agree, dinos are my favorite.&lt;/p&gt;<br />
+                        &lt;footer&gt;<br />
+                        &lt;p&gt;<br />
+                                Posted on<br />
+                                &lt;time datetime="2015-05-17 19:00">May 17&lt;/time&gt;<br />
+                                by Tom.<br />
+                                &lt;/p&gt;<br />
+                                &lt;/footer&gt;<br />
+                                &lt;/article&gt;<br />
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;aside&gt;</td>
+                    <td>Representa una parte de un documento cuyo contenido está sólo indirectamente relacionado con el contenido principal del documento.</td>
+                    <td>
+                        &lt;article&gt;<br />
+                        &lt;p&gt;<br />
+                              The Disney movie &lt;cite&gt; The Little Mermaid&lt;/cite&gt; was first released to<br />
+                              theatres in 1989.<br />
+                              &lt;/p&gt;<br />
+                              &lt;aside&gt;<br />
+                              &lt;p&gt;The movie earned $87 million during its initial release.&lt;/p&gt;<br />
+                              &lt;/aside&gt;<br />
+                              &lt;p&gt;More info about the movie…&lt;/p&gt;<br />
+                              &lt;/article&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;audio&gt;</td>
+                    <td>Se utiliza para incrustar contenido de sonido en documentos. </td>
+                    <td>
+                        &lt;audio src="AudioTest.ogg" autoplay&gt;<br />
+                        &lt;a href="AudioTest.ogg">Download OGG audio&lt;/a&gt;.<br />
+                        &lt;/audio&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;b&gt;</td>
+                    <td>Se utiliza para llamar la atención del lector sobre el contenido del elemento, al que de otro modo no se le concede especial importancia.</td>
+                    <td>
+                        &lt;p&gt;<br />
+                            This article describes several &lt;b&gt;text-level&lt;/b&gt; elements. It<br />
+                            explains their usage in an &lt;b&gt;HTML&lt;/b&gt; document.<br />
+                            &lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;base&gt;</td>
+                    <td>Especifica la URL base que se utilizará para todas las URL relativas de un documento. Sólo puede haber un elemento &lt;base&gt; en un documento.</td>
+                    <td>
+                        &lt;base href="https://www.example.com/" /&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;bdi&gt;</td>
+                    <td>Le indica al algoritmo bidireccional del navegador que trate el texto que contiene de forma aislada del texto circundante.</td>
+                    <td>
+                        &lt;li&gt;&lt;bdi class="name"&gt;Evil Steven&lt;/bdi&gt;: 1st place&lt;/li&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdi">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;bdo&gt;</td>
+                    <td>Anula la direccionalidad actual del texto, de modo que el texto que contiene se representa en una dirección diferente.</td>
+                    <td>
+                        &lt;p&gt;This text will go left to right.&lt;/p&gt;
+                        &lt;p&gt;&lt;bdo dir="rtl"&gt;This text will go right to left.&lt;/bdo&gt;&lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/bdo">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;blockquote&gt;</td>
+                    <td>Indica que el texto adjunto es una cita extendida.</td>
+                    <td>
+                        &lt;blockquote cite="https://www.lipsum.com/"&gt;<br />
+                        &lt;p&gt;<br />
+                                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."<br />
+                        &lt;/p&gt;<br />
+                        &lt;/blockquote&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>representa el contenido de un documento HTML. Sólo puede haber un elemento &lt;body&gt; en un documento.</td>
+                    <td>
+                        &lt;html lang="en"&gt;<br />
+                        &lt;head&gt;<br />
+                        &lt;title&gt;Document title&lt;/title&gt;<br />
+                        &lt;/head&gt;<br />
+                        &lt;body&gt;<br />
+                        &lt;p&gt;<br />
+                                The &lt;code&gt;&amp;gt;body&amp;gt;&lt;/code&gt; HTML element represents the content of an
+                                HTML document. There can be only one &lt;code&gt;&amp;lt;body&amp;gt&lt;/code&gt; element in
+                                a document.
+                                &lt;/p&gt;<br />
+                                &lt;/body&gt;<br />
+                                &lt;/html&gt;
+                           
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/body">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Produce un salto de línea en el texto </td>
+                    <td>
+                        Mozilla&lt;br /&gt;<br />
+                        331 E. Evelyn Avenue&lt;br /&gt;<br />
+                        Mountain View, CA&lt;br /&gt;<br />
+                        94041&lt;br /&gt;<br />
+                        USA&lt;br /&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;button&gt;</td>
+                    <td>Es un elemento interactivo activado por un usuario con un mouse, teclado, dedo, comando de voz u otra tecnología de asistencia. </td>
+                    <td>
+                        &lt;button name="button"&gt;Press me&lt;/button&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;canvas&gt;</td>
+                    <td>Utilice el elemento HTML &lt;canvas&gt; con la API de secuencias de comandos de lienzo o la API WebGL para dibujar gráficos y animaciones.</td>
+                    <td>
+                        &lt;canvas width="120" height="120"&gt;<br />
+                            An alternative text describing what your canvas displays.<br />
+                            &lt;/canvas&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td>Especifica el título (o título) de una tabla.</td>
+                    <td>
+                        &lt;table&gt;<br />
+                        &lt;caption&gt;Example Caption&lt;/caption&gt;<br />
+                              &lt;tr&gt;&lt;th&gt;Login&lt;/th&gt;&lt;th&gt;Email&lt;/th&gt;&lt;/tr&gt;<br />
+                              &lt;tr&gt;&lt;td&gt;user1&lt;/td&gt;&lt;td&gt;user1@sample.com&lt;/td&gt;&lt;/tr&gt;<br />
+                              &lt;/table&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;cite&gt;</td>
+                    <td>Se utiliza para marcar el título de un trabajo creativo citado.</td>
+                    <td>
+                        &lt;p&gt;More information can be found in &lt;cite&gt;[ISO-0000]&lt;/cite&gt;.&lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;code&gt;</td>
+                    <td>Muestra su contenido con un estilo que pretende indicar que el texto es un breve fragmento de código informático.</td>
+                    <td>
+                        &lt;p&gt;<br />
+                            The function &lt;code&gt;selectAll()&lt;/code&gt; highlights all the text in the input
+                            field so the user can, for example, copy or delete the text.<br />
+                            &lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Define una columna dentro de una tabla y se utiliza para definir la semántica común en todas las celdas comunes. </td>
+                    <td>
+                        &lt;table border="1"&gt;<br />
+                        &lt;colgroup&gt;&lt;col style="background-color: lightgray;"&gt;&lt;/colgroup&gt;<br />
+                        &lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;<br />
+                        &lt;tr&gt;&lt;td&gt;Dato 1&lt;/td&gt;&lt;/tr&gt;<br />
+                        &lt;/table&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>El elemento define un grupo de columnas dentro de una tabla.</td>
+                    <td>
+                        &lt;table border="1"&gt;<br />
+                        &lt;colgroup&gt;&lt;col style="background-color: lightgray;"&gt;&lt;/colgroup&gt;<br />
+                        &lt;tr&gt;&lt;th&gt;Encabezado&lt;/th&gt;&lt;/tr&gt;<br />
+                        &lt;tr&gt;&lt;td&gt;Dato 1&lt;/td&gt;&lt;/tr&gt;<br />
+                        &lt;/table&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;data&gt;</td>
+                    <td>Vincula un contenido determinado con una traducción legible por máquina.</td>
+                    <td>
+                        &lt;p&gt;New Products&lt;/p&gt;<br />
+                        &lt;ul&gt;<br />
+                        &lt;li&gt;&lt;data value="398"&gt;Mini Ketchup&lt;/data&gt;&lt;/li&gt;<br />
+                        &lt;li&gt;&lt;data value="399"&gt;Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;<br />
+                        &lt;li&gt;&lt;data value="400"&gt;Mega Jumbo Ketchup&lt;/data&gt;&lt;/li&gt;<br />
+                        &lt;/ul&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;datalist&gt;</td>
+                    <td>contiene un conjunto de elementos &lt;option&gt; que representan las opciones permitidas o recomendadas disponibles para elegir dentro de otros controles.</td>
+                    <td>
+                        &lt;datalist id="browsers"&gt;<br />
+                        &lt;option value="Chrome"&gt;&lt;/option&gt;<br />
+                        &lt;option value="Firefox"&gt;&lt;/option&gt;<br />
+                        &lt;option value="Microsoft Edge"&gt;&lt;/option&gt;<br />
+                        &lt;/datalist&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dd&gt;</td>
+                    <td>Proporciona la descripción, definición o valor del término anterior (&lt;dt&gt;) en una lista de descripción (&lt;dl&gt;).</td>
+                    <td>
+                        &lt;dl&gt;<br />
+                            &lt;dt&gt;Término 1&lt;/dt&gt;<br />
+                            &lt;dd&gt;Definición 1: Esto es una descripción del término 1.&lt;/dd&gt;<br />
+                            &lt;dt&gt;Término 2&lt;/dt&gt;<br />
+                            &lt;dd&gt;Definición 2: Esto es una descripción del término 2.&lt;/dd&gt;<br />
+                            &lt;/dl&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;del&gt;</td>
+                    <td>Representa un rango de texto que se ha eliminado de un documento.</td>
+                    <td>
+                        &lt;p&gt;&lt;del&gt;This text has been deleted&lt;/del&gt;, here is the rest of the paragraph.&lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;details&gt;</td>
+                    <td>Crea un widget de divulgación en el que la información es visible sólo cuando el widget se cambia a un estado "abierto".</td>
+                    <td>
+                        &lt;details&gt;<br />
+                        &lt;summary&gt;System Requirements&lt;/summary&gt;<br />
+                        &lt;p&gt;
+                              Requires a computer running an operating system. The computer must have some 
+                              memory and ideally some kind of long-term storage. An input device as well
+                              as some form of output device is recommended.
+                              &lt;/p&gt;<br />
+                              &lt;/details&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dfn&gt;</td>
+                    <td>Se utiliza para indicar el término que se define dentro del contexto de una frase u oración de definición.</td>
+                    <td>
+                        &lt;p&gt;
+                            The &lt;strong&gt;HTML Definition element (&lt;dfn&gt; &amp;lt;dfn&amp;gt; &lt;/dfn&gt;)&lt;/strong&gt; is used
+                            to indicate the term being defined within the context of a definition phrase
+                            or sentence.
+                            &lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dialog&gt;</td>
+                    <td>Representa un cuadro de diálogo u otro componente interactivo, como una alerta, un inspector o una subventana descartables.</td>
+                    <td>
+                        &lt;dialog open&gt;<br />
+                        &lt;p&gt;Greetings, one and all!&lt;/p&gt;<br />
+                        &lt;form method="dialog"&gt;
+                        &lt;button&gt;OK&lt;/button&gt;
+                        &lt;/form&gt;<br />
+                        &lt;/dialog&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Es el contenedor genérico para el contenido fluido.</td>
+                    <td>
+                        &lt;div&gt;
+                        &lt;p&gt;
+                              Any kind of content here. Such as &amp;lt;p&amp;gt;, &amp;lt;table&amp;gt;. You name it!
+                              &lt;/p&gt;
+                              &lt;/div&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dl&gt;</td>
+                    <td>representa una lista de descripción. El elemento incluye una lista de grupos de términos y descripciones. Los usos comunes de este elemento son implementar un glosario o mostrar metadatos .</td>
+                    <td>
+                        &lt;dl&gt;<br />
+                        &lt;dt&gt;Firefox&lt;/dt&gt;<br />
+                        &lt;dd&gt;
+                              A free, open source, cross-platform, graphical web browser developed by the
+                              Mozilla Corporation and hundreds of volunteers.
+                              &lt;/dd&gt;<br />
+                          
+                            &lt;!-- Other terms and descriptions --&gt;<br />
+                            &lt;/dl&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;dt&gt;</td>
+                    <td>especifica un término en una lista de descripción o definición y, como tal, debe usarse dentro de un elemento &lt;dl&gt;. </td>
+                    <td>
+                        &lt;dl&gt;<br />
+                        &lt;dt&gt;Firefox&lt;/dt&gt;<br />
+                        &lt;dd&gt;
+                              A free, open source, cross-platform, graphical web browser developed by the
+                              Mozilla Corporation and hundreds of volunteers.
+                              &lt;/dd&gt;<br />
+                          
+                            &lt;!-- Other terms and descriptions --&gt;<br />
+                            &lt;/dl&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Marca el texto que tiene énfasis. Se puede anidar, y cada nivel de anidamiento indica un mayor grado de énfasis.</td>
+                    <td>
+                        &lt;p&gt;<br />
+                            Ice cream is made with milk, sweetener, and cream. Frozen custard, on the
+                            other hand, is made of milk, cream, sweetener, and &lt;em&gt;egg yolks&lt;/em&gt;.<br />
+                            &lt;/p&gt;
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;embed&gt;</td>
+                    <td>Incorpora contenido externo en el punto especificado del documento.</td>
+                    <td>
+                        &lt;embed<br />
+                        type="video/quicktime"<br />
+                        src="movie.mov"<br />
+                        width="640"<br />
+                        height="480"<br />
+                        title="Title of my video" /&gt;
+
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;fieldset&gt;</td>
+                    <td>Se utiliza para agrupar varios controles así como etiquetas (&lt;label&gt;) dentro de un formulario web.</td>
+                    <td>
+                       <code>
+                        &lt;form action="#"&gt;<br />
+                            &lt;fieldset&gt;<br />
+                                &lt;legend&gt;Do you agree?&lt;/legend&gt;<br />
+                                &lt;input type="checkbox" id="chbx" name="agree" value="Yes!" /&gt;<br />
+                                &lt;label for="chbx"&gt;I agree&lt;/label&gt;<br />
+                            &lt;/fieldset&gt;<br />
+                        &lt;/form&gt;
+                       </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;figcaption&gt;</td>
+                    <td>Representa un título o leyenda que describe el resto del contenido de su elemento principal &lt;figure&gt;.</td>
+                    <td>
+                        <code>
+                            &lt;!-- Just an image --&gt;<br />
+                            &lt;figure&gt;
+                            &lt;img src="favicon-192x192.png" alt="The beautiful MDN logo." /&gt;
+                            &lt;/figure&gt;<br />
+                            &lt;!-- Image with a caption --&gt;<br />
+                            &lt;figure&gt;
+                            &lt;img src="favicon-192x192.png" alt="The beautiful MDN logo." /&gt;
+                            &lt;figcaption&gt;MDN Logo&lt;/figcaption&gt;
+                            &lt;/figure&gt;
+                        </code>
+                     </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;figure&gt;</td>
+                    <td>epresenta contenido autónomo, potencialmente con un título opcional, que se especifica mediante el elemento &lt;figcaption&gt;.</td>
+                    <td>
+                        <code>
+                            &lt;!-- Just an image --&gt;<br />
+                            &lt;figure&gt;
+                            &lt;img src="favicon-192x192.png" alt="The beautiful MDN logo." /&gt;
+                            &lt;/figure&gt;<br />
+                            &lt;!-- Image with a caption --&gt;<br />
+                            &lt;figure&gt;
+                            &lt;img src="favicon-192x192.png" alt="The beautiful MDN logo." /&gt;
+                            &lt;figcaption&gt;MDN Logo&lt;/figcaption&gt;
+                            &lt;/figure&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Representa un pie de página para el contenido de sección de su antecesor más cercano o el elemento raíz de sección</td>
+                    <td>
+                        <code>
+                            &lt;body&gt;<br />
+                            &lt;!--Codigo--&gt;<br />
+                            &lt;footer&gt;<br />
+                            &lt;small&gt;
+                                    Copyright © 2023 Football History Archives. All Rights Reserved.
+                                    &lt;/small&gt;<br />
+                                    &lt;/footer&gt;<br />
+                                    &lt;/body&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;</td>
+                    <td>Representa una sección de documento que contiene controles interactivos para enviar información.</td>
+                    <td>
+                        <code>
+                            &lt;form method="get"&gt;<br />
+                            &lt;label&gt;
+                                  Name:
+                                  &lt;input name="submitted-name" autocomplete="name" /&gt;
+                                  &lt;/label&gt;<br />
+                                  &lt;button&gt;Save&lt;/button&gt;<br />
+                                  &lt;/form&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;</td>
+                    <td>Los elementos HTML &lt;h1&gt; a &lt;h6&gt; representan seis niveles de encabezados de sección del mas grande al pequeño.</td>
+                    <td>
+                        <code>
+                            &lt;h1&gt;Heading level 1&lt;/h1&gt;<br />
+                            &lt;h2&gt;Heading level 2&lt;/h2&gt;<br />
+                            &lt;h3&gt;Heading level 3&lt;/h3&gt;<br />
+                            &lt;h4&gt;Heading level 4&lt;/h4&gt;<br />
+                            &lt;h5&gt;Heading level 5&lt;/h5&gt;<br />
+                            &lt;h6&gt;Heading level 6&lt;/h6&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Contiene información legible por máquina (metadatos) sobre el documento, como su título, secuencias de comandos y hojas de estilo.</td>
+                    <td>
+                        <code>
+                            &lt;!doctype html&gt;<br />
+                            &lt;html lang="en-US"&gt;<br />
+                            &lt;head&gt;<br />
+                            &lt;meta charset="UTF-8" /&gt;<br />
+                            &lt;meta name="viewport" content="width=device-width" /&gt;<br />
+                            &lt;title&gt;Document title&lt;/title&gt;<br />
+                            &lt;/head&gt;<br />
+                            &lt;/html&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Representa contenido introductorio, normalmente un grupo de ayudas introductorias o de navegación.</td>
+                    <td>
+                        <code>
+                            &gt;header&gt;<br />
+                            &gt;h1&gt;Main Page Title&gt;/h1&gt;<br />
+                            &gt;img src="mdn-logo-sm.png" alt="MDN logo" /&gt;<br />
+                            &gt;/header&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;hgroup&gt;</td>
+                    <td>Representa un encabezado y contenido relacionado. </td>
+                    <td>
+                        <code>
+                            &lt;body&gt;<br />
+                            &lt;hgroup id="document-title"&gt;<br />
+                            &lt;h1&gt;HTML: Living Standard&lt;/h1&gt;<br />
+                            &lt;p&gt;Last Updated 12 July 2022&lt;/p&gt;
+                            &lt;/hgroup&gt;
+                            &lt;p&gt;Some intro to the document.&lt;/p&gt;<br />
+                            &lt;h2&gt;Table of contents&lt;/h2&gt;<br />
+                            &lt;ol id="toc"&gt;<br />
+                                  …<br />
+                                  &lt;/body&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hgroup" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;hr&gt;</td>
+                    <td>Representa una ruptura temática entre elementos a nivel de párrafo: por ejemplo, un cambio de escena en una historia o un cambio de tema dentro de una sección.</td>
+                    <td>
+                        <code>
+                            &lt;p&gt;
+                                This is the first paragraph of text. This is the first paragraph of text. This
+                                is the first paragraph of text. This is the first paragraph of text.
+                                &lt;/p&gt;<br />
+                                &lt;hr /&gt;<br />
+                                &lt;p&gt;
+                                This is the second paragraph of text. This is the second paragraph of text.
+                                This is the second paragraph of text. This is the second paragraph of text.
+                                &lt;/p&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;html&gt;</td>
+                    <td>Representa la raíz (elemento de nivel superior) de un documento HTML, por lo que también se le conoce como elemento raíz.</td>
+                    <td>
+                        <code>
+                            &lt;!doctype html&gt;<br />
+                            &lt;html lang="en"&gt;<br />
+                            &lt;head&gt;
+                            &lt;!-- … --&gt;
+                            &lt;/head&gt;<br />
+                            &lt;body&gt;
+                            &lt;!-- … --&gt;
+                            &lt;/body&gt;<br />
+                            &lt;/html&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;i&gt;</td>
+                    <td>Representa un rango de texto que se separa del texto normal por algún motivo, como texto idiomático, términos técnicos, designaciones taxonómicas, entre otros. </td>
+                    <td>
+                        <code>
+                            &lt;p&gt;<br />
+                                The Latin phrase &lt;i lang="la"&gt;Veni, vidi, vici&lt;/i&gt; is often mentioned in
+                                music, art, and literature.<br />
+                            &lt;/p&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;iframe&gt;</td>
+                    <td>Representa un contexto de navegación anidado, incrustando otra página HTML en la actual.</td>
+                    <td>
+                        <code>
+                            &lt;iframe<br />
+                            src="https://example.org"<br />
+                            title="iframe Example 1"<br />
+                            width="400"<br />
+                            height="300"&gt;<br />
+                            &lt;/iframe&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>El elemento incrusta una imagen en el documento.</td>
+                    <td>
+                        <code>
+                            &lt;img src="favicon144.png" alt="MDN logo" /&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;imput&gt;</td>
+                    <td>se utiliza para crear controles interactivos para formularios basados ​​en web con el fin de aceptar datos del usuario; Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control, según el dispositivo y el agente de usuario.</td>
+                    <td>
+                        <code>
+                            &lt;input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10" /&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;ins&gt;</td>
+                    <td>Representa un rango de texto que se ha agregado a un documento. Puede utilizar el elemento &lt;del&gt; para representar de manera similar un rango de texto que se ha eliminado del documento.</td>
+                    <td>
+                        <code>
+                            &lt;ins&gt;This text has been inserted&lt;/ins&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;kbd&gt;</td>
+                    <td>Representa un tramo de texto en línea que denota la entrada textual del usuario desde un teclado, entrada de voz o cualquier otro dispositivo de entrada de texto.</td>
+                    <td>
+                        <code>
+                            &lt;p&gt;
+                                Use the command &lt;kbd&gt;help mycommand&lt;/kbd&gt; to view documentation for the
+                                command "mycommand".
+                            &lt;/p&gt;
+                        </code>
+                    </td>
+                    <td><a href="" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;label&gt;</td>
+                    <td>Representa un título para un elemento en una interfaz de usuario.</td>
+                    <td>
+                        <code>
+                            &lt;label&gt;Click me &lt;input type="text" /&gt;&lt;/label&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;legend&gt;</td>
+                    <td>representa un título para el contenido de su &lt;fieldset&gt; principal.</td>
+                    <td>
+                        <code>
+                            &lt;fieldset&gt;<br />
+                            &lt;legend&gt;Choose your favorite monster&lt;/legend&gt;<br />
+                            &lt;input type="radio" id="kraken" name="monster" value="K" /&gt;<br />
+                            &lt;label for="kraken"&gt;Kraken&lt;/label&gt;<br />
+                            &lt;input type="radio" id="sasquatch" name="monster" value="S" /&gt;<br />
+                            &lt;label for="sasquatch"&gt;Sasquatch&lt;/label&gt;<br />
+                            &lt;/fieldset&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/legend" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>Se utiliza para representar un elemento en una lista.</td>
+                    <td>
+                        <code>
+                            &lt;ol&gt;<br />
+                            &lt;li&gt;first item&lt;/li&gt;<br />
+                            &lt;li&gt;second item&lt;/li&gt;<br />
+                            &lt;li&gt;third item&lt;/li&gt;<br />
+                            &lt;/ol&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Especifica las relaciones entre el documento actual y un recurso externo. </td>
+                    <td>
+                        <code>
+                            &lt;link href="style.css" rel="stylesheet" /&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;main&gt;</td>
+                    <td>representa el contenido dominante del &lt;body&gt; de un documento. El área de contenido principal consta de contenido que está directamente relacionado o amplía el tema central de un documento o la funcionalidad central de una aplicación.</td>
+                    <td>
+                        <code>
+                            &lt;header&gt;Gecko facts&lt;/header&gt;<br />
+                            &lt;main&gt;<br />
+                            &lt;p&gt;
+                                Geckos are a group of usually small, usually nocturnal lizards. They are found on every continent except Australia.
+                                &lt;/p&gt;<br />
+                            
+                                &lt;p&gt;Many species of gecko have adhesive toe pads which enable them to climb walls and even windows&lt;/p&gt;<br />
+                                &lt;/main&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>se utiliza con elementos &lt;area&gt; para definir un mapa de imagen (un área de enlace en la que se puede hacer clic).</td>
+                    <td>
+                        <code>
+                            &lt;map name="primary"&gt;<br />
+                            &lt;area<br />
+                                  shape="circle"<br />
+                                  coords="75,75,75"<br />
+                                  href="https://developer.mozilla.org/docs/Web/JavaScript"<br />
+                                  target="_blank"<br />
+                                  alt="JavaScript" /&gt;<br />
+                                  &lt;area<br />
+                                  shape="circle"<br />
+                                  coords="275,75,75"<br />
+                                  href="https://developer.mozilla.org/docs/Web/CSS"<br />
+                                  target="_blank"<br />
+                                  alt="CSS" /&gt;
+                              </map>
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;mark&gt;</td>
+                    <td>Representa texto que está marcado o resaltado con fines de referencia o notación debido a la relevancia del pasaje marcado en el contexto adjunto.</td>
+                    <td>
+                        <code>
+                            &lt;p&gt;Several species of &lt;mark&gt;salamander&lt;/mark&gt; inhabit the temperate rainforest of the Pacific Northwest.&lt;/p&gt;
+                        </code>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark" target="_blank">Más info.</a></td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&lt;menu&gt;</td>
+                    <td>Se describe en la especificación HTML como una alternativa semántica a &lt;ul&gt;, pero los navegadores lo tratan (y lo exponen a través del árbol de accesibilidad) como no diferente de &lt;ul&gt;. </td>
+                    <td>
+                        <code>
+                            &lt;menu&gt;<br />
+                            &lt;li&gt;&lt;button onclick="copy()"&gt;Copy&lt;/button&gt;&lt;/li&gt;<br />
+                            &lt;li&gt;&lt;button onclick="cut()"&gt;Cut&lt;/button&gt;&lt;/li&gt;<br />
+                            &lt;li&gt;&lt;button onclick="paste()"&gt;Paste&lt;/button&gt;&lt;/li&gt;<br />
+                            &lt;/menu&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/menu" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Representa metadatos que no pueden ser representados por otros elementos HTML relacionados con meta, como &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; o &lt;title&gt;.</td>
+                    <td>
+                        <code>
+                            &lt;meta http-equiv="refresh" content="3;url=https://www.mozilla.org" /&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;meter&gt;</td>
+                    <td>Representa un valor escalar dentro de un rango conocido o un valor fraccionario.</td>
+                    <td>
+                        <code>
+                            &lt;p&gt;
+                                Heat the oven to &lt;meter min="200" max="500" value="350"&gt;350 degrees&lt;/meter&gt;.
+                                &lt;/p&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meter" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o hacia otros documentos.</td>
+                    <td>
+                        <code>
+                            &lt;nav class="menu"&gt;<br />
+                            &lt;ul&gt;<br />
+                            &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br />
+                            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br />
+                            &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br />
+                            &lt;/ul&gt;<br />
+                            &lt;/nav&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;noscript&gt;</td>
+                    <td>Define una sección de HTML que se insertará si un tipo de secuencia de comandos en la página no es compatible o si las secuencias de comandos están actualmente desactivadas en el navegador.</td>
+                    <td>
+                        <code>
+                            &lt;noscript&gt;<br />
+                            &lt;!-- anchor linking to external file --&gt;<br />
+                            &lt;a href="https://www.mozilla.org/"&gt;External Link&lt;/a&gt;<br />
+                            &lt;/noscript&gt;<br />
+                            &lt;p&gt;Rocks!&lt;/p&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscrip" target="_blank">Más info.</a></td>
+                </tr>
+                <tr>
+                    <td>&lt;object&gt;</td>
+                    <td>Representa un recurso externo, que puede tratarse como una imagen, un contexto de navegación anidado o un recurso para ser manejado por un complemento.</td>
+                    <td>
+                        <code>
+                            &lt;object<br />
+                            type="video/mp4"<br />
+                            data="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"<br />
+                            width="600"<br />
+                            height="140"&gt;<br />
+                            &lt;img src="path/image.jpg" alt="useful image description" /&gt;<br />
+                            &lt;/object&gt;
+                        </code>
+                    </td>
+                    <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object" target="_blank">Más info.</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <p>
+            @Leonardo Köller Mejia
+        </p>
+    </footer>
+   
+</body>
+</html>
